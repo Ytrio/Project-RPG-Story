@@ -1,0 +1,220 @@
+body {
+	font-family: "Bitstream Vera Sans Mono";
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	background: rgb(254,187,187); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(254,187,187,1) 0%, rgba(254,144,144,1) 45%, rgba(255,92,92,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,187,187,1)), color-stop(45%,rgba(254,144,144,1)), color-stop(100%,rgba(255,92,92,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 45%,rgba(255,92,92,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 45%,rgba(255,92,92,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 45%,rgba(255,92,92,1) 100%); /* IE10+ */
+}
+
+div.DivSign-in {
+	width: 1000px;
+	height: 800px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	background-color: #FFE7BA;
+	box-shadow: 5px 6px 0 #000;
+	border-radius:10px;
+}
+
+.H1_StoryRpg,.h3_MsgSign {
+	margin-left: 60px;
+}
+
+.H1_StoryRpg {
+	color: #FFF;
+}
+
+.H1_Sign {
+	text-align: center;
+	font-size: xx-large;
+	text-transform: capitalize;
+	letter-spacing: 5px;
+	color: #1E5799;
+}
+
+input[type="text"],input[type="password"],input[type="date"] {
+	display: block;
+	width: 400px;
+	height: 25px;
+	margin-top: 10px;
+}
+
+label {
+	height: 25px;
+	float: left;
+	width: 150px;
+	text-align: right;
+	margin-right: 15px;
+	clear: left;
+	margin-top: 15px;
+}
+
+.Span_ColorRed {
+	color: #FF0000;
+	font-weight: 900;
+}
+
+.ButtonsDates {
+	border: none;
+	font-family: "ubuntu mono";
+	height: 40px;
+	width: 150px;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-top: 30px;
+	border-radius: 6px;
+	width: 180px;
+}
+
+.ButtonsDates,.BtnSendPhoto {
+	background: #7abcff; /* Old browsers */
+	background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff),
+		color-stop(44%, #60abf8), color-stop(100%, #4096ee));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* W3C */
+	margin-left:10px;
+}
+
+select {
+	width: 350px;
+	height:30px;
+}
+
+.FieldSet_TipoJogador,.FieldSet_Sexy,.FieldSet_Sistema,.FieldSet_Cenarios,.FieldSet_Generos,.FieldSet_photo
+	{
+	width: 583px;
+	margin-left: 165px;
+	margin-top: 10px;
+	border: none;
+}
+
+.FieldSet_photo {
+	border: none;
+	margin-left: -25px;
+	margin-top:30px;
+}
+
+.BtnSendPhoto {
+	font-family: "ubuntu mono";
+	border: none;
+	border-radius: 4px;
+	height: 40px;
+	width: 180px;
+	color: #FFF;
+	margin-left: 50px;
+	font-weight: 700;
+	font-size: 20px;
+	background: #7abcff; /* Old browsers */
+	background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff),
+		color-stop(44%, #60abf8), color-stop(100%, #4096ee));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	border: none; /* W3C */
+}
+
+.BtnSendPhoto:hover,.ButtonsDates:hover {
+	background: #1E90FF;
+}
+
+.StyleImg {
+	float: right;
+	margin-top: -280px;
+	margin-right: 130px;
+	border-radius:4px;
+	
+}
+
+input[type="text"],input[type="password"],input[type="date"] {
+	border-radius: 4px;
+	height: 30px;
+	border: 1px solid #EEE9E9;
+}
+
+.PathImage {
+	height: 25px;
+	opacity: 0.0;
+}
+
+.DivUpload {
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff),
+		color-stop(100%, #e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+	/* W3C */
+	color: #000;
+	height: 25px;
+	margin-left: 44px;
+	margin-top: -30px;
+	width: 281px;
+	font-weight: 700;
+}
+
+.TitleUpload {
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+	height: 18px;
+}
+
+::-webkit-input-placeholder {
+	font-family:"ubuntu mono";
+	color: #000;
+	letter-spacing:2px;
+	padding-left:10px;
+}
+
+/* firefox 19+ */
+::-moz-placeholder {
+	font-family:"ubuntu mono";
+	color: #000;
+	letter-spacing:2px;
+	padding-left:10px;
+} 
+
+input[type="date"] {
+	height:25px;
+	letter-spacing:5px;
+}
+
+.AlignGrid{
+	margin-left:27px;
+}
+
+.AlignFieldSet{
+	margin-left:-146px;
+}
+

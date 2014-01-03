@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!--Link externo CSS para estilisar a página "Sign-in.html" -->
+        <link rel="stylesheet" href="../CSS/StyleSignIn.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+        <!--Link externo para o JavaScript "FieldCheck.js" -->
+        <script type="text/javascript" src="JAVASCRIPT/FieldCheck.js"> </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Cadastrar usuário</title>
+        <!--Link extero para o javascript que adiciona um avatar ao cadastro do usuário-->
+        <script type = "text/javascript" src="JAVASCRIPT/AdicionarAvatar.js"></script>
+    </head>
+    <body onload="document.focusForm.GetNome.focus();">
+       <!--Cabeçalho do site contendo o seu nome--> 
+       <h1 class="H1_StoryRpg">Formulário de cadastramento</h1>
+       <!--Sub Titulo com msg de boas vindas-->
+       <h3 class="h3_MsgSign"> Cadastre - se abaixo para obter todas as vantagens que o nosso site oferece</h3>
+       <!--Div Cadastro-->
+       <div class="DivSign-in" id="DivSign">
+           <!--Titulo de preenchimento--> 
+           <h1 class="H1_Sign">Preencha os dados abaixo</h1>
+           <!--Campos de preechimento para o cadastramento do usuários no site-->
+           <form class="Form_Cadastrar" id="formCadastro" name="focusForm" onsubmit="return  checkingFieldsVoid(this)" enctype="multipart/form-data">
+              <div class="AlignGrid">
+	               <!--Rotulo do textField nome-->
+	               <label class="Label_Nome">Nome: <span class="Span_ColorRed"> * </span></label>
+	               
+	               <!--textField nome-->
+	               <input type="text"  class="Input_Nome" placeholder="Nome do usuário" name="nome" id="GetNome" maxlength="50" >
+	               
+	               <!--Mensagem de erro!-->
+	               <p id="P_MudarCor"> </p>
+	               
+	               <!--Rotulo do textField e-mail-->
+	               <label class="Label_Email">e-mail: <span class="Span_ColorRed"> * </span></label>
+	               <!--textField email-->
+	               <input type="text"  class="Input_Email" name="email"  placeholder="E-mail" id="GetEmail"maxlength="50">
+	               
+	               <p id="P_MudarCor2"> </p>
+	               <!--Rotulo do textField senha-->
+	               <label class="Label_Senha">Senha: <span class="Span_ColorRed"> * </span></label>
+	               <!--textField password-->
+	               <input type="password"  class="Input_Senha" placeholder="Senha" id="GetSenha" maxlength="25" name="senha">
+	               <!--Rotulo do textField senha-->
+	               <label class="Label_ConfirmaSenha">confirma senha: <span class="Span_ColorRed"> * </span></label>
+	               <!--textField contra senha-->
+	               <input type="password"  class="Input_ConfirmPassword" name="contra_senha" placeholder="Senha novamente" id="GetConfirmaSenha" maxlength="25">
+	                <!--Rotulo textField data-->
+	               <label class="Label_Nasicimento">Data de Nascimento: <span class="Span_ColorRed"> * </span></label>
+	               <!--textField data-->
+	               <input type="date"  class="Input_Data" name="data" placeholder="Data de nascimento">
+               </div>
+               <!--Usuário foto-->
+               <fieldset class="FieldSet_photo">
+                    <input type="file"   name="Path_Image" class="PathImage" id="PathImage" size="35" title="Selecione uma imagem">
+                    <input type="button" name="sendPhoto" onclick="sendImage()" value="Carregar imagem" class="BtnSendPhoto">
+                    <div class="DivUpload"><span class="TitleUpload">Upload Imagem</span></div>
+               </fieldset>
+               <!--Imagem que irá se exibida--->
+               <img id="Id_Img" class="StyleImg"/>
+               <div class="AlignFieldSet">
+	               <!--Campo de definição "tipo do jogador" -->
+	               <fieldset class="FieldSet_TipoJogador">
+	               <legend>Tipo de jogador:</legend>
+	                    <input type="checkbox" value="Masculino" name="sexo_masculino">Jogador
+	                    <input type="checkbox" value="Feminino"  name="sexo_feminino">Narrador
+	               </fieldset><!--Fim do FieldSet Sexy-->
+	               <!--Campo de definição "Sexo Jogador"-->
+	               <fieldset class="FieldSet_Sexy">
+	                   <legend>Sexo:</legend>
+	                   <select size="1">
+	                      <option value="Masculino">Masculino</option> 
+	                      <option value="Feminino">Feminino</option> 
+	                   </select>
+	               </fieldset>
+	               <!--Campo de definição Sistema de Jogos-->
+	               <fieldset class="FieldSet_Sistema">
+	                   <legend> Sistemas preferidos: </legend>
+	                   <select size="1" >
+	                        <option value="D20">D20</option>
+	                        <option value="Storytelling">StoryTelling</option>
+	                        <option value="Storyteller">Storyteller</option>
+	                        <option value="Gurps">Gurps</option>
+	                        <option value="3D&T">3D&T</option>
+	                        <option value="Daemon">Daemon</option>
+	                        <option value="RPGquest">RPGquest</option>
+	                        <option value="CODA">CODA</option>
+	                        <option value="Finganforn">Finganforn</option>
+	                      </select>
+	               </fieldset>
+	               <!--Campo de definição Cenários do jogo-->
+	                <fieldset class="FieldSet_Cenarios">
+	                   <legend> Cenários: </legend>
+	                   <select size="1">
+	                        <option value="Mundo das trevas">Mundo das trevas</option>
+	                        <option value="Senhor do aneis">Senhor do aneis</option>
+	                        <option value="D&D">D&D</option>
+	                      </select>
+	               </fieldset>
+	               <!--Campo de definição Géneros do jogo-->
+	               <fieldset class="FieldSet_Generos">
+	                   <legend> Géneros: </legend>
+	                   <select size="1">
+	                        <option value="Fantasia">Fantasia</option>
+	                        <option value="Ficção científica">Ficção científica</option>
+	                        <option value="Histórico">Histórico</option>
+	                        <option value="Avatar">Avatar</option>
+	                        <option value="Horror">Horror</option>
+	                        <option value="Humor">Humor</option>
+	                      </select>
+	               </fieldset>
+               </div>
+               <!--Botões de envio de dados e remoção de dados-->
+               <input type="submit" class="ButtonsDates" value="Salva dados">
+               <input type="reset" class="ButtonsDates" value="Apaga dados" onclick="document.focusForm.GetNome.focus();">
+           </form><!--Fim do formulário cadastro-->
+        </div><!--Fim da div "DivSign-in" -->
+    </body>
+</html>
+

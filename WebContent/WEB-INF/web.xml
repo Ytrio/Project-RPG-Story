@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	
+	<display-name>HttpWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!--Servlet StoryRPG Register-->
+	<servlet>
+		<servlet-name>ServletStoryRpg_Register</servlet-name>
+		<servlet-class>com.br.RpgStory.main.ApplicationMain_UserRegister</servlet-class>
+	</servlet>
+	
+<!--Mapeamento da servlet Register-->
+	<servlet-mapping>
+		<servlet-name>ServletStoryRpg_Register</servlet-name>
+		<url-pattern>/ServletStoryRpg_Register</url-pattern>
+	</servlet-mapping>
+	
+
+
+	<!--Servlet StoryRPG Login-->
+	<servlet>
+		<servlet-name>ServletStoryRpg_Login</servlet-name>
+		<servlet-class>com.br.RpgStory.main.ApplicationMain_UserLogin</servlet-class>
+	</servlet>
+	
+<!--Mapeamento da servlet Login-->
+	<servlet-mapping>
+		<servlet-name>ServletStoryRpg_Login</servlet-name>
+		<url-pattern>/ServletStoryRpg_Login</url-pattern>
+	</servlet-mapping>
+</web-app>
